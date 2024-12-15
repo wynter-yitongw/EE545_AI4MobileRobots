@@ -1,0 +1,19 @@
+pid:
+  kp: 2.5
+  kd: 1.8
+pp:
+  distance_lookahead: 0.98
+mpc:
+  K: 20
+  T: 15
+
+# K=16
+# T=10
+
+# 12.9 16:05
+# K = 12
+# T = 8
+
+
+
+# 12,8 works

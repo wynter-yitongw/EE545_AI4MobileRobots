@@ -1,0 +1,219 @@
+waypoints:
+  - header: 
+      seq: 390
+      stamp: 
+        secs: 1733270732
+        nsecs: 954576969
+      frame_id: "map"
+    pose: 
+      position: 
+        x: 50.016116514999275
+        y: 11.776000060605773
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.2191563275601063
+        w: 0.9756897581149283
+      
+  - header:
+    seq: 726
+    stamp:
+      secs: 1733270816
+      nsecs: 907137632
+    frame_id: "map"
+    pose:
+      position:
+        x: 51.99414985220023
+        y: 11.381943142359805
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: -0.7968957862445206
+        w: 0.6041167981985994
+
+  - header:
+    seq: 822
+    stamp:
+      secs: 1733270840
+      nsecs: 950271129
+    frame_id: "map"
+    pose:
+      position:
+        x: 48.05312979685351
+        y: 10.51519021221666
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.9630482670216182
+        w: 0.26932886103546
+
+##### Added waypoint between 3 & 4
+
+  - header:
+    seq: 1155
+    stamp:
+      secs: 1733270910
+      nsecs: 550271100
+    frame_id: "map"
+    pose:
+      position:
+        x: 42.40000000000000
+        y: 12.00000000000000
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.9630482670216182
+        w: 0.26932886103546
+
+
+############
+
+  - header:
+    seq: 1388
+    stamp:
+      secs: 1733270982
+      nsecs: 421947479
+    frame_id: "map"
+    pose:
+      position:
+        x: 35.94633905087241
+        y: 14.691824342134277
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.9954623554796518
+        w: 0.09515618121227479
+
+  - header:
+    seq: 2019
+    stamp:
+      secs: 1733271140
+      nsecs: 188269138
+    frame_id: "map"
+    pose:
+      position:
+        x: 36.69078072707532
+        y: 16.350090204427282
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.40767180168834594
+        w: 0.9131285244193054
+
+##### Added waypoint between 5 & 6
+
+  - header:
+    seq: 2346
+    stamp:
+      secs: 1733271250
+      nsecs: 550276600
+    frame_id: "map"
+    pose:
+      position:
+        x: 33.000000000000000
+        y: 20.100000000000000
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.9993046326065912
+        w: 0.03728607315078512
+
+
+############
+
+  - header:
+    seq: 2669
+    stamp:
+      secs: 1733271302
+      nsecs: 657741069
+    frame_id: "map"
+    pose:
+      position:
+        x: 29.449269954666544
+        y: 23.169533440547504
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.9993046326065912
+        w: 0.03728607315078512
+
+##### Added waypoint between 6 & 7
+
+  - header:
+    seq: 2993
+    stamp:
+      secs: 1733271372
+      nsecs: 157231400
+    frame_id: "map"
+    pose:
+      position:
+        x: 27.000000000000000
+        y: 19.500000000000000
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.9993046326065912
+        w: 0.03728607315078512
+
+
+############
+
+  - header:
+    seq: 3259
+    stamp:
+      secs: 1733271450
+      nsecs: 157231807
+    frame_id: "map"
+    pose:
+      position:
+        x: 22.869818320238746
+        y: 14.972199929617284
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.9993046326065912
+        w: 0.03728607315078512
+
+  - header:
+    seq: 3892
+    stamp:
+      secs: 1733271608
+      nsecs: 407099246
+    frame_id: "map"
+    pose:
+      position:
+        x: 11.137046677712535
+        y: 10.700824007123888
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: -0.8646589194368682
+        w: 0.5023593863343926
+
+  - header:
+    seq: 4286
+    stamp:
+      secs: 1733271706
+      nsecs: 912836074
+    frame_id: "map"
+    pose:
+      position:
+        x: 12.284405732558957
+        y: 7.887410156007042
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: -0.4223539226404264
+        w: 0.9064310034582029

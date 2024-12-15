@@ -1,0 +1,33 @@
+
+
+# car_terminal
+ssh -Y robot@172.16.77.25
+pwd: prl_robot
+source ~/.bashrc
+cd ~/catkin_ws
+catkin clean
+catkin build
+
+# local
+export ROS_MASTER_URI=http://172.16.77.25:11311
+
+# car
+roslaunch mushr_base teleop.launch
+
+# local
+rosrun map_server map_server $(rospack find ee545)/maps/small_basement.yaml
+
+# new_local_terminal1
+roslaunch localization particle_filter_sim.launch use_namespace:=true publish_tf:=truetf_prefix:="car/"
+
+# new_local_terminal2
+rosrun rviz rviz -d ~/mushr_ws/src/mushr545au24/ee545/config/default.rviz
+
+
+# backup command lines
+nano .bashrc
+source ~/mushr_ws/devel/setup.bash
+
+echo $ROS_MASTER_URI
+rostopic list | grep scan
+rosbag record initialpose inferred_pose particles scan
