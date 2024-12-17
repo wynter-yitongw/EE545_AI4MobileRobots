@@ -2,7 +2,7 @@ import numpy as np
 import rospy
 
 # BEGIN QUESTION 2.3
-"*** REPLACE THIS LINE ***"
+from geometry_msgs.msg import PoseStamped
 # END QUESTION 2.3
 
 
@@ -17,7 +17,11 @@ def norm_python(data):
     n, d = data.shape
     norm = np.zeros(n)
     # BEGIN QUESTION 2.1
-    "*** REPLACE THIS LINE ***"
+    for i in range(n): 
+        squares_sum = 0
+        for j in range(d):
+            squares_sum += data[i, j] ** 2
+        norm[i] = np.sqrt(squares_sum)
     # END QUESTION 2.1
     return norm
 
@@ -33,7 +37,10 @@ def norm_numpy(data):
     # You can call np.sqrt, np.sum, np.square, etc.
     # Hint: you may find the `axis` parameter useful.
     # BEGIN QUESTION 2.2
-    "*** REPLACE THIS LINE ***"
+    squared = np.square(data)
+    squares_sum = np.sum(squared, axis=1)
+    norm = np.sqrt(squares_sum)
+    return norm
     # END QUESTION 2.2
 
 
@@ -49,8 +56,7 @@ class PoseListener:
         # import it at the top! If the message type from `rostopic info` is
         # "X_msgs/Y", the Python import would be "from X_msgs.msg import Y".
         # BEGIN QUESTION 2.3
-        "*** REPLACE THIS LINE ***"
-        self.subscriber = None
+        self.subscriber = rospy.Subscriber("/car/car_pose", PoseStamped, self.callback)
         # END QUESTION 2.3
 
     def callback(self, msg):
@@ -62,7 +68,11 @@ class PoseListener:
 
         # Extract and store the x and y position from the message data
         # BEGIN QUESTION 2.4
-        "*** REPLACE THIS LINE ***"
+        x = msg.pose.position.x
+        y = msg.pose.position.y
+        
+        rospy.loginfo("timestamp" + str(header.stamp.secs) + "(s) [X,Y]:" + str(x) + ',' + str(y))
+        self.storage.append((x, y, header.stamp.secs))
         # END QUESTION 2.4
         if len(self.storage) == self.size:
             self.done = True

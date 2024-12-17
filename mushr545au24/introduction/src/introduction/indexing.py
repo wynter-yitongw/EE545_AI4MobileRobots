@@ -1,4 +1,4 @@
-# from introduction.fibonacci import compute_fibonacci
+from introduction.fibonacci import compute_fibonacci
 
 
 def extract_fibonacci_rows(data):
@@ -17,7 +17,16 @@ def extract_fibonacci_rows(data):
            [34, 37, 38]])
     """
     # BEGIN QUESTION 3.1
-    "*** REPLACE THIS LINE ***"
+    max_idx = data.shape[0] - 1
+    fib_rows = []
+    i = 0
+    while True:
+        fib_num = compute_fibonacci(i)
+        if fib_num > max_idx:
+            break
+        fib_rows.append(fib_num)
+        i += 1
+    return data[fib_rows]
     # END QUESTION 3.1
 
 
@@ -44,5 +53,6 @@ def increment_rows_with_odd_first_element(data):
            [16, 17, 18]])
     """
     # BEGIN QUESTION 3.2
-    "*** REPLACE THIS LINE ***"
+    turn_odd = data[:, 0] % 2 == 1
+    data[turn_odd] += 1
     # END QUESTION 3.2

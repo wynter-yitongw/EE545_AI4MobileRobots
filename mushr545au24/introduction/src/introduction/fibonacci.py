@@ -13,5 +13,10 @@ def compute_fibonacci(n):
     3
     """
     # BEGIN QUESTION 1.1
-    "*** REPLACE THIS LINE ***"
+    if n == 0:
+        return 0
+    a, b = 0, 1
+    for i in range(1, n):
+        a, b = b, a + b
+    return b
     # END QUESTION 1.1
